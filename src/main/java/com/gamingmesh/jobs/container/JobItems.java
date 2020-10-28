@@ -68,6 +68,7 @@ public class JobItems {
 		    }
 		}
 	    }
+		meta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
 	    item.setItemMeta(meta);
 	    item.setAmount(amount);
 	    item = CMIReflections.setNbt(item, "JobsItemBoost", node);
@@ -111,6 +112,7 @@ public class JobItems {
 		    }
 		}
 	    }
+		meta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
 	    item.setItemMeta(meta);
 	    return item;
 	} catch (Exception e) {
